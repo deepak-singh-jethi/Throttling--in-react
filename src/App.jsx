@@ -9,13 +9,19 @@ const App = () => {
   const lastThrottleCallAt = useRef(0);
 
   const handleChange = (e) => {
+    const currentValue = e.target.value;
+
+    setValue(currentValue);
+
     // current time in ms
     const now = Date.now();
 
     // if current time - last throttle call time > 1000ms
 
     if (now - lastThrottleCallAt.current > 1000) {
-      setThrottledValue(e.target.value);
+      setThrottledValue(
+        (prev) => prev + currentValue.charAt(currentValue.length - 1)
+      );
 
       // saving last throttle call time
       lastThrottleCallAt.current = now;
