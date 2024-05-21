@@ -1,5 +1,5 @@
 
-```markdown
+
 # Throttling Example in React
 
 This project demonstrates how to implement throttling in a React application using functional components and hooks.
@@ -10,10 +10,12 @@ Throttling is a technique used to limit the frequency of function calls. It ensu
 
 In this application, we throttle the input event to update a value after a certain interval. The throttled value is updated only if the input event hasn't occurred for the specified duration (1 second in this case).
 
+
+
+
+
 ## Usage
 
-
-```
 
 1. Clone the repository:
    ```sh
@@ -53,8 +55,7 @@ In this application, we throttle the input event to update a value after a certa
 
 - **Input Field**: A text input field (`<input>`) that triggers the `handleChange` function on change.
 - **Display Values**: Displays the original input value and the throttled value in separate paragraphs (`<p>`).
-
-
+  
 
 ## Acknowledgements
 
